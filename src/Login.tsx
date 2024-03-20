@@ -6,25 +6,25 @@ import {
   FormControl,
   Input,
   Button,
-  Link
+  Link,
 } from "native-base";
 import Logo from "./assets/Logo.png";
 import { TouchableOpacity } from "react-native";
 import { Titulo } from "./Componentes/Titulo";
 import { EntradaTexto } from "./Componentes/EntradaTexto";
+import { Botao } from "./Componentes/Botao";
 
 export default function Login() {
+
   return (
     <VStack flex={1} alignItems="center" justifyContent="center" p={5}>
       <Image source={Logo} alt="Logo Voll" />
       <Titulo titulo="Faça Login em sua conta !" />
       <Box>
         <EntradaTexto label="Email" placeholder="Insira seu email" />
-        <EntradaTexto label="Senha" placeholder="Insira uma senha"/>
+        <EntradaTexto label="Senha" placeholder="Insira uma senha" />
       </Box>
-      <Button w="100%" bg="blue.800" mt="10" borderRadius="lg">
-        Entrar
-      </Button>
+      <Botao conteudo="Entrar" />
       <Link href="https://alura.com.br" mt="2">
         Esqueceu sua senha ?
       </Link>
