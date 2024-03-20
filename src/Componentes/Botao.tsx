@@ -5,7 +5,7 @@ interface BotaoProps {
   funcaoDoBotao: ()=> void;
   corDeFundo: string
   margemTopo: string
-  margemBottom: string
+  margemBottom?: string
 }
 
 export function Botao({ conteudo, funcaoDoBotao, corDeFundo, margemTopo, margemBottom }: BotaoProps) {
