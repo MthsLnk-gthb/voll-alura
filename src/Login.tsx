@@ -24,7 +24,7 @@ export default function Login({navigation}) {
         <EntradaTexto label="Email" placeholder="Insira seu email" />
         <EntradaTexto label="Senha" placeholder="Insira uma senha" />
       </Box>
-      <Botao conteudo="Entrar" corDeFundo="blue.800" margemTopo="8" funcaoDoBotao={()=> null} />
+      <Botao conteudo="Entrar" corDeFundo="blue.800" margemTopo="8" funcaoDoBotao={()=> navigation.navigate("Tabs")} />
       <Link href="https://alura.com.br" mt="2">
         Esqueceu sua senha ?
       </Link>
