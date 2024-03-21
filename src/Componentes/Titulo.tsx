@@ -8,7 +8,7 @@ interface TituloProps{
 
 export function Titulo({titulo}: TituloProps) {
   return (
-    <Text fontSize="2xl" fontWeight="bold" color="gray.500" marginTop="5">
+    <Text fontSize="2xl" fontWeight="bold" color="gray.500" marginTop="5"alignSelf="center">
       {titulo}
     </Text>
   );
